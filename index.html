@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container"></div>
+        <h1>Poll System </h1>
+        <div class="poll">
+            <h2>What is your favorite programing languge ?</h2>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" name="poll" id="option1">
+                    <label for="option1">Python</label>
+                </div>
+                <div class="option"></div>
+                    <input type="radio" name="poll" id="option2">
+                    <label for="option2">Javascript</label>
+                </div>
+                <div class="option"></div>
+                    <input type="radio" name="poll" id="option3">
+                    <label for="option3">PHP</label>
+                </div>
+                <div class="option"></div>
+                    <input type="radio" name="poll" id="option4">
+                    <label for="option4">Laravel</label>
+                </div>
+            </div>
+            <button onclick="submitPoll()">Submit Vote</button>
+            <div class="result"></div>
+        </div>
+    </div>
     <!-- Js Link -->
      <script src="script.js"></script>
 </body>

@@ -1,0 +1,108 @@
+body {
+    background-color: rgba(142, 212, 241, 0.918);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: cardAnimaton 1s ease-in-out;
+
+}
+
+/* Card Animation  */
+@keyframes cardAnimaton {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: rgba(142, 212, 246, 0.918);
+    font-size: 32px;
+    opacity: 0.8;
+}
+
+.poll {
+    margin-top: 20px;
+}
+
+h2 {
+    color: rgba(142, 212, 246, 0.918);
+    font-size: 24px;
+    margin-bottom: 20px;
+   
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Imput code Style */
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    background-color: rgba(142, 212, 246, 0.518);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Option Code  */
+.option {
+    margin-bottom: 10px;
+}
+
+.option{
+    color: black;
+    
+}
+
+.option:hover{
+    background-color: rgba(4, 167, 237, 0.918);
+    color: white;
+    width: fit-content;
+    border-radius: 5px;
+    
+}
+.option input[type="radio"]:checked + label {
+    background-color: rgba(71, 181, 241, 0.918);
+    color: white;
+}
+/* button  */
+button{
+    background-color:rgba(71, 181, 241, 0.918) ;
+    color: #fff;
+    padding: 10px 20px ;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: rgba(4, 167, 237, 0.918);
+}

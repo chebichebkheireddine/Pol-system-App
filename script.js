@@ -46,3 +46,4 @@ function submitPoll(){
 function getTotalVotes(){
         return options.reduce((acc, option)=> acc + option.vote, 0 );
 }
+displayResults();
